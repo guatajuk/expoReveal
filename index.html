@@ -4,17 +4,18 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>Adam Smith</title>
+		<title>Feature Driven Development</title>
 
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		
+		<meta name="description" content="Feature Driven Development - Metodología ágil de desarrollo">
+		<meta name="author" content="guatajuk">
+
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 		<link rel="stylesheet" href="css/reveal.min.css">
-		<link rel="stylesheet" href="css/theme/sky.css" id="theme">
+		<link rel="stylesheet" href="css/theme/night.css" id="theme">
 
 		<!-- For syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -33,124 +34,96 @@
 
 	<body>
 		<div class="reveal">
-			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-				<section id="presentacion" >
-					<h1>Adam Smith</h1>
-					<h3>El padre del capitalismo</h3>
+				<section id="presentacion">
+					<h1>Feature Driven Develoment</h1>
+					<h3>Desarrollo basado en funciones</h3>
 					<p>
-						<small>Presentado por</small><br>
-						<small><a href="https://www.facebook.com/NaTa.GaRcEs">Natalia Garcés Herrera</a> / <a href="https://twitter.com/Nata_garces">@nata_garces</a></small><br>
-						<small><a href="https://www.facebook.com/juancnb777">Juan Camilo Noreña</a> / <a href="http://twitter.com/lobo_d_b">@lobo_d_b</a></small><br>
-						<small><a href="https://www.facebook.com/jcastanio">Juan Castaño</a> / <a href="http://twitter.com/juan_castano">@juan_castano</a></small><br>
-						<small><a href="http://facebook.com/guatajuk">Julián Alberto Gaitán</a> / <a href="http://twitter.com/guatajuk">@guatajuk</a></small><br>
+						<small>Presentado por <a href="https://www.facebook.com/guatajuk">Julián Alberto Gaitán Arias</a> / <a href="http://twitter.com/guatajuk">@guatajuk</a></small>
 					</p>
 				</section>
-
-				<section id="Julian">
-					<section id="su_vida">
-						<h2>Su vida</h2><br>
-						<p>Adam Smith Douglas Jr. nació en <i><strong>Kirkaldy</strong></i>, un pequeño pueblo al sur de Escocia en el año de 1723.<br><br>
-						<img width="400" height="300" src="images/scotland_flag.jpeg" alt="Down arrow"></p>
-					</section>
-					<section id="universidad_glasgow">
-					<h2>Universidad</h2>
-						<br><p>A los 14 años ingresó a la Universidad de Glasgow (1737)</p><br>
-						<a href="#" class="image navigate-down"><img width="400" height="300" src="images/glasgow.jpeg" alt="Down arrow"></p></a>
-					</section>
-					<section id="universidad_oxford">
-					<h2>Universidad</h2>
-						<br><p>A los 17 años ganó una beca para estudiar en la <br>Universidad de Oxford (1740)</p><br>
-						<a href="#" class="image navigate-down"><img width="400" height="300" src="images/balliol.jpeg" alt="Down arrow"></p></a>
-					</section>
-					<section id="universidad_trabajo">
-						<h2>Catedrático y Tutor</h2><br><br>
-						<p>En 1751 fue llamado por su propia Universidad de Glasgow para ocupar primeramente la cátedra de Lógica, y al año siguiente, la de Filosofía Moral<br><br>
-						En 1763 un poderoso aristócrata ofreció a Smith una pensión vitalicia por ser el tutor de su hijastro el III Duque de Buccleuch</p>
-					</section>
-					<section id="alfileres">
-						<h2>Adam smith y la fabrica de alfileres</h2><br>
-						<ul>
-							<li class="fragment"><code>Obrero no entrenado produce 1 alfiler al día</code></li>
-							<li class="fragment"><code>Obrero entrenado produce 20 alfileres al día</code></li>
-							<li class="fragment"><code>12 libras de alfileres al día en total</code></li>
-							<li class="fragment"><code>1 libra contiene 4000 alfileres</code></li>
-							<li class="fragment"><code>48.000 alfileres producidos entre 10 obreros</code></li>
-							<li class="fragment"><code>4.800 alfileres por persona</code></li>
-						</ul>
-						<br><br><br><small>La Riqueza de las Naciones - 1776</small>
-					</section>
-					<section id="frases">
+				<section id="que_es">
+					<h1>¿Qué es FDD?</h1><br>
+					<p>
+						Es una metodología ágil diseñada para el desarrollo de software, basada en la calidad y el monitoreo constante del proyecto.<br>
+					</p>
+				</section>		
+				<section id="creadores">
+					<div id="contenedor-creadores" align="center"> 
+						<h1>Creadores</h1><br>
+						<div id="jeff-peter-izquierdo" width="50%" align="center" style="float:left">
+							<h3><code>Peter Coad</code></h3>
+							<img width="300" height="400" src="images/peter.jpeg" alt="Down arrow" align="center">
+						</div>
+						<div id="jeff-peter-derecho" width="50%" align="center" style="float:right">
+							<h3><code>Jeff De Luca</code></h3>
+							<img width="320" height="400" src="images/jeff.jpeg" alt="Down arrow" align="center">
+						</div>
+					</div>
+				</section>
+				<section id="caracteristicas">
+				<h2>Características</h2>
 					<br>
-						<h4>"No es por la <strong>benevolencia</strong> del carnicero, del cervecero y del panadero que podemos contar con nuestra cena, sino por su propio <strong>interés"</strong></h4>
-						<small>La Riqueza de las Naciones</small><br><br>
-						<h4>“Por más egoísta que se pueda suponer al hombre, existen evidentemente en su naturaleza algunos principios que le hacen <strong>interesarse por la suerte de otros</strong>, y hacen que la felicidad de éstos le resulte necesaria, aunque no derive de ella nada más que el placer de contemplarla. Tal es el caso de la lástima o la compasión, la emoción que sentimos ante la desgracia ajena cuando la vemos o cuando nos la hacen concebir de forma muy vívida"
-						</h4>
-						<small>Teoría de los Sentimientos Morales</small><br><br>
-					</section>
+					<div id="carateristicas-izquierdo" width="40%" align="center" style="float:left">			
+						<img width="350" height="500" src="images/caracteristicas.jpeg" alt="Down arrow" align="center">
+					</div>
+					<div id="caracteristicas-derecho" width="60%" align="center" style="float:right">
+						<ol>
+							<li>Se preocupa por la calidad</li><br>
+							<li>Ayuda a contrarrestar<br> situaciones contraproducentes</li><br>
+							<li>Propone tener etapas de <br>cierre cada dos semanas</li><br>
+							<li>Se obtienen resultados <br>periódicos y tangibles</li><br>
+							<li>Define claramente entregas tangibles</li><br>
+							<li>No hace énfasis en la <br>obtención de los requerimientos</li><br>
+						</ol>
+					</div>
 				</section>
-				<section id="natalia">
-					<section id="nata1">
-						<h3>Una investigación sobre la naturaleza de las causas de la riqueza de las naciones</h3>
-						<a href="#" class="image navigate-down"><img width="400" height="300" src="images/adam_run.png" alt="Down arrow"></p></a>
-					</section>
-					<section id="nata2">
-						<h3>La clave del <strong>bienestar social</strong> está en el crecimiento económico, que se potencia a través de la <strong>división del trabajo</strong> y la <strong>libre competencia</strong></h3>
-					</section>
-					<section id="nata3">
-						<img width="700" height="600" src="images/invisible_hand.png" alt="Down arrow">
-					</section>
-					<section id="nata4">
-						<h3><strong>La mano invisible</strong> es esencialmente un producto natural, fenómeno que guía el libre mercado y el capitalismo a través de la competencia por los <strong>escasos recursos</strong></h3>
-					</section>
-					<section id="principios">
-					<h3><strong>Principios de Adam Smith</strong></h3>
+				<section id="actividades">
+					<h2>Actividades Básicas</h2>
+					<img width="400" height="550" src="images/actividades.png" alt="Down arrow" align="center">
+				</section>
+				<section id="buenas_practicas">
+					<h2>Buenas Prácticas</h2>
+					<br>
+					<ul>
+						<li><code>Domain Object Modeling</code></li>
+						<li><code>Desarrollo por funcionalidad</code></li>
+						<li><code>Individual Class Ownership</code></li>
+						<li><code>Equipos de Características</code></li>
+						<li><code>Inspecciones</code></li>
+						<li><code>Administración de la configuración</code></li>
+						<li><code>Regular Builds</code></li>
+						<li><code>Visibilidad del progreso</code></li>
+					</ul>
+				</section>
+				<section id="ventajas">
+					<section id="ventajas_1">
+						<h2>Ventajas</h2><br>
 						<ul>
-							<li>Principio de Justicia</li>
-							<li>Principio de Certidumbre</li>
-							<li>Principio de Comodidad</li>
-							<li>Principio de Economía</li>
-
+							<li>No malgasta el tiempo y dinero del cliente</li>
+							<li>Cada componente del producto final ha sido probado</li>
+							<li>Rápida respuesta a cambios de requisitos</li>
+							<li>Entrega continua y en plazos cortos</li>
+						</ul>
+					</section>
+					<section id="ventajas_2">
+						<h2>Ventajas</h2><br>
+						<ul>
+							<li>Trabajo conjunto entre el cliente y el equipo</li>
+							<li>Minimiza los costos frente a cambios</li>
+							<li>Atención continua a la excelencia técnica</li>
+							<li>Evita malentendidos en los requerimientos</li>
 						</ul>
 					</section>
 				</section>
-				<section id="castano">
-					<section id="comercio_internacional">
-						<h2>Comercio Internacional</h2>
-					</section>
-					<section id="ventaja_absoluta">
-						<h2>Ventaja Absoluta</h2><br>
-						<img width="600" height="400" src="images/comercio-internacional.gif" alt="Down arrow">
-					</section>
-					<section id="laissez_faire">
-						<strong>“Laissez faire, laissez passer, le monde va de lui même”</strong><br><br>
-						<code>Déjalo ser, déjalo pasar, <br>el mundo va por si mismo</code><br><br>
-						<img width="500" height="300" src="images/lassiez-faire.jpeg" alt="Down arrow">
-					</section>
-					<section id="riqueza">
-						<p>“La verdadera riqueza de los países no radicaba <br>
-						en tener grandes pilas de oro y plata en la <br>
-						tesorería, sino un constante incremento en la calidad <br>
-						de vida de sus ciudadanos”</p><br>
-						<img width="400" height="400" src="images/gente-mundo.jpeg" alt="Down arrow">
-					</section>
-				</section>
-				<section id="lobo">
-					<section id="libro1">
-						<h3><strong>The Theory of Moral Sentiments</strong><h3>
-					</section>
-					<section id="I-II">
-						<p><strong>Part I:</strong> Of the propriety of action<br><br>
-    					<strong>Part II:</strong> Of merit and demerit; or of the objects of reward and punishment</p>
-    				</section>
-    				<section id="III-IV">
-	    				<p><strong>Part III:</strong> Of the foundations of our judgments concerning our own sentiments and conduct, and of the sense of duty<br><br>
-	    				<strong>Part IV:</strong> Of the effect of utility upon the sentiments of approbation.
-    				</section>
-    				<section id="V-VI">
-	    				<P><strong>Part V:</strong> Of the influence of custom and fashion upon the sentiments of moral approbation and disapprobation<br><br>
-	    				<strong>Part VI:</strong> Of systems of moral philosophy
-    				</section>
+				<section id="desventajas">
+					<h2>Desventajas</h2>
+					<ul>
+						<li>Falta de documentación del diseño</li>
+						<li>Problemas derivados de la comunicación oral</li>
+						<li>Fuerte dependencia de las personas</li>
+						<li>Falta de reusabilidad</li>
+					</ul>
 				</section>
 			</div>
 		</div>
